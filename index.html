@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Titillium+Web&display=swap" rel="stylesheet">
     <title>Jane</title>
 </head>
@@ -12,10 +12,13 @@
   <!-- Navbar -->
   <div class="navbar row">
     <a class="col"><h3 id="navbar-name">Jane W. Larsen</h3></a>
-    <a class="col-lg-1 nav-link" href="#projects">Projects</a>
-    <a class="col-lg-1 nav-link" href="#skills">Skills</a>
-    <a class="col-lg-1 nav-link" href="#contact">Contact</a>
-    <a class="col-lg-1 nav-link" disabled>Resume</a>
+    <div class="nav-links toggle-menu">
+      <a class="col-lg-1 nav-link" href="#projects">Projects</a>
+      <a class="col-lg-1 nav-link" href="#skills">Skills</a>
+      <a class="col-lg-1 nav-link" href="#contact">Contact</a>
+      <a class="col-lg-1 nav-link" disabled>Resume</a>
+    </div>
+    <a href="" class="menu-btn"></a>
   </div>
   <!--  Section 1 -->
     <div class="heading row justify-content-center">
@@ -30,7 +33,7 @@
       </div>
     </div>
   <!--  Section 2 -->
-    <div id="projects" class="projects">
+    <div id="projects" class="projects container">
       <h1 class="subheading">Recent projects</h1>
       <div class="projects-cards row justify-content-center">
         <div class="card col-lg-3 col-md-6 col-sm-12">
@@ -54,7 +57,7 @@
               and agile development using scrum.  
             </p>
             <a class="col-lg-5"href="https://youtu.be/NFJFGF5oKYw">Demo</a>
-            <a class="col-lg-5"href="https://github.com/aadnekar/TDT4240_22">Code</a>
+            <a class="col-lg-5"id="code-btn" href="https://github.com/aadnekar/TDT4240_22">Code</a>
           </div>
       </div>
       <div class="card col-lg-3 col-md-6 col-sm-12">
@@ -72,57 +75,57 @@
     </div>
 
   <!--  Section 3 -->
-  <div id="skills" class="skills row justify-content-center">
-    <div class="col-lg-12 subheading">
+  <div id="skills" class="skills container">
+    <div class="row subheading justify-content-center">
       <h1>Technologies</h1>
     </div>
-    <div class="col-lg-5" >
-      <img src="./img/skills.png" id="skills-img" alt="Skills drawing">
-    </div>
-    <div class="col-lg-5">
-      <h3 style="max-width:83%">The picture to the left shows some of the technologies I am familiar with.
-        I have also been using <span style="color:#ed6ea0">Git</span> and <span style="color:#ed6ea0">GitLab</span> for version control and collaboration. 
-        With teams I have also used the agile development method <span style="color:#ed6ea0">scrum</span>. 
-        I am eager to learn more! </h3>
-        <br>
-      <h3>In a group I consider my self as: </h3>
-      <ul>
-        <li><h4>Positive</h4></li>
-        <li><h4>Conscientious</h4></li>
-        <li><h4>On time</h4></li>
-        <li><h4>Engaged</h4></li>
-        <li><h4>Creative</h4></li>
-        <li><h4>Adaptable</h4></li>
-      </ul>
+    <div class="row">
+      <div class="col-lg-5 col-sm-12" >
+        <img src="./img/skills.png" id="skills-img" alt="Skills drawing">
+      </div>
+      <div class="col-lg-5 col-sm-12">
+        <h3 style="max-width:83%">The picture shows some of the technologies I am familiar with.
+          I have also been using <span style="color:#ed6ea0">Git</span> and <span style="color:#ed6ea0">GitLab</span> for version control and collaboration. 
+          With teams I have also used the agile development method <span style="color:#ed6ea0">scrum</span>. 
+          I am eager to learn more! </h3>
+          <br>
+        <h3>In a group I consider my self as: </h3>
+        <ul>
+          <li><h4>Positive</h4></li>
+          <li><h4>Conscientious</h4></li>
+          <li><h4>On time</h4></li>
+          <li><h4>Engaged</h4></li>
+          <li><h4>Creative</h4></li>
+          <li><h4>Adaptable</h4></li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <!--  Footer -->
-    <footer id="contact">
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-          <h2 id="contact-text">Lets connect!</h2>
-          <div id="contact-info">
-            <h5><img src="./img/home.png" class="contact-png">Trondheim, Norway</h5>
-            <h5><img src="./img/mortarboard.png" class="contact-png">Informatics bachelor, 3rd year</h5>
-            <h5><img src="./img/phone.png" class="contact-png">97172653</h5>
-          </div>
-        </div>
-      <div class="contact-buttons col-lg-5">
-        <a href="https://www.linkedin.com/in/jane-wiik-larsen-a40995144/" class="button">
-          <span><img src="./img/linkedin.png" class="contact-png">Lets connect on LinkedIn</span>
-        </a>
-        <a href="https://github.com/janewl?tab=repositories" class="button">
-          <span><img src="./img/logo.png" class="contact-png">See my GitHub page</span>
-        </a>
-        <a href="mailto: janewl@stud.ntnu.no" class="button">
-          <span><img src="./img/linkedin.png" class="contact-png">Send me an email</span>
-        </a>
-      </div>
-    </div>
-       
+    <footer id="contact" class="container-fluid">
+          <h2 id="contact-text" class="row justify-content-center">Lets connect!</h2>
+          <div class="row justify-content-center">
+            <div id="contact-info col-lg-5 col-sm-12">
+              <h5><img src="./img/home.png" class="contact-png">Trondheim, Norway</h5>
+              <h5><img src="./img/mortarboard.png" class="contact-png">Informatics bachelor, 3rd year</h5>
+              <h5><img src="./img/phone.png" class="contact-png">97172653</h5>
+            </div>
+            <div class="contact-buttons col-lg-5">
+              <a href="https://www.linkedin.com/in/jane-wiik-larsen-a40995144/" class="button col-sm-4">
+                <span><img src="./img/linkedin.png" class="contact-png"><h5 class="contact-text">Lets connect on LinkedIn</h5></span>
+              </a>
+              <a href="https://github.com/janewl?tab=repositories" class="button col-sm-4">
+                <span><img src="./img/logo.png" class="contact-png"><h5 class="contact-text">See my GitHub page</h5></span>
+              </a>
+              <a href="mailto: janewl@stud.ntnu.no" class="button col-sm-4">
+                <span><img src="./img/linkedin.png" class="contact-png"><h5 class="contact-text">Send me an email</h5></span>
+              </a>
+            </div>
+          </div> 
     <h6 style="text-align: center; margin-top:4vh; color: black;">Icons made by <a style="color:black" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a style="color:black" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
