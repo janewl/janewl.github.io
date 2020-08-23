@@ -75,10 +75,11 @@ body::-webkit-scrollbar-thumb{
   opacity: 1;
   color: white; 
 }
-
+.nav-links{
+  width: 45vw; 
+}
 /* Section 1 */ 
 .heading{
-  min-height: 100vh;
   width: 100%;
   position: relative;
   top: 54px; 
@@ -194,16 +195,20 @@ body::-webkit-scrollbar-thumb{
 }
 .projects-cards .card:nth-child(1) .circle{
   background-image: url("./img/exerciseIt.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projects-cards .card:nth-child(2) .circle{
   background-image: url("./img/animal-war.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 .projects-cards .card:nth-child(3) .circle{
   background-image: url("./img/homepage.png");
   background-color: black; 
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projects-cards .card .content h2{
   color: black; 
